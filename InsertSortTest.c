@@ -21,10 +21,7 @@ int InSSort(int* arr,int len)
 	{
 		k=arr[i];
 		j=i-1;
-		while(j>-1&&arr[j]>k)
-		{
-			arr[j+1]=arr[j--];
-		}
+		while(j>-1&&arr[j]>k)arr[j+1]=arr[j--];
 		arr[j+1]=k;
 		if(!(++i^len))break;
 	}
